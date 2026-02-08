@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(36, 36, 207);
+    padding: 1rem;
+}
+header h2{
+    color: #fff;
+}
+header nav ul{
+    display: flex;
+    gap: 15px;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+    
+}
+header nav ul li a:hover{
+    transform: scale(1.1);
+}
+
+/* media query */
+@media (max-width:767px) {
+   header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(36, 36, 207);
+    padding: 1rem;
+} 
+
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+}
+/* media query */
+
+
+/* start hero */
+.hero{
+    
+    height: 90vh;
+     background-image:url(./image/architect.jpg) ;
+    background-position: center;
+    background-size: cover; 
+    background-blend-mode:overlay;
+    background-color: rgba(0,0,0,.5);
+
+    
+   
+}
+.hero-div{
+    position: absolute;
+    top: 50%;
+    margin-left: 10%;
+    color: #fff;
+    line-height:25px ;
+}
+.hero-div h3{
+   color: rgb(36, 36, 207);
+}
+ .btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color:rgb(36, 36, 207);
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-1{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color:#eeee;
+    color: rgb(36, 36, 207);
+    transition: 0.5s;
+    cursor: pointer;
+}
+ .btn:hover{
+    background-color: rgb(36, 36, 207);
+    color:#fff;
+}
+
+
+/* end hero */
+
+/*  */
+.container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 4rem;
+   
+}
+.container .card{
+    width: 20rem;
+    /* height: 60vh; */
+    border: 1px solid #000;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.div-card{
+    text-align: center;
+    padding: 5px;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+}
+.div-card h3{
+    color: rgb(36, 36, 207);
+}
+.container .card img{
+   width: 100%;
+   max-height: 200px;
+   
+}
+/*  */
+
+
+/*  */
+footer{
+    width: 100%;
+    background-color: rgb(36, 36, 207) ;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #eee;
+  padding: 20px;
+} */
